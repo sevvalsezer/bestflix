@@ -1,26 +1,9 @@
 {% extends 'base.html' %}
+{% load static from static %}
 
 {% block content %}
     <div class="content">
-        <div class="content-container">
-            <section class="popular-movie-slider slider">
-                <div>
-                    {% include 'components/movie-card.html' with moviePoster='https://image.tmdb.org/t/p/w300/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg' movieTitle='News of the World' movieYear='2020' movieDescription='A Texan traveling across the wild West bringing the news of the world to local townspeople, agrees to help rescue a young girl who was kidnapped.' %}
-                </div>
-                  <div>
-                    {% include 'components/movie-card.html' with moviePoster='http://image.tmdb.org/t/p/w300/odeUNlWUcjjxQhqNVe811oyfiVW.jpg' movieTitle='Rio' movieYear='2011' movieDescription=' Captured by smugglers when he was just a hatchling, a macaw named Blu never learned to fly and lives a happily domesticated life in Minnesota with his human friend, Linda. Blu is thought to be the last of his kind, but when word comes that Jewel' %}
-                </div>
-                  <div>
-                    {% include 'components/movie-card.html' with moviePoster='http://image.tmdb.org/t/p/w300/zqmXRqHHSTqOnrjyvnEr0P028o5.jpg' movieTitle='Dom za vešanje' movieYear='1988' movieDescription='In this luminous tale set in the former Yugoslavia, Perhan, an engaging young Romany with telekinetic powers, is seduced by the quick-cash world of petty crime that threatens to destroy him and those he loves.' %}
-                </div>
-                  <div>
-                    {% include 'components/movie-card.html' with moviePoster='http://image.tmdb.org/t/p/w300/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg' movieTitle=' Kill Bill: Vol. 1' movieYear='2003' movieDescription='An assassin is shot by her ruthless employer, Bill, and other members of their assassination circle – but she lives to plot her vengeance.' %}
-                </div>
-                  <div>
-                    {% include 'components/movie-card.html' with moviePoster='http://image.tmdb.org/t/p/w300/2yhg0mZQMhDyvUQ4rG1IZ4oIA8L.jpg' movieTitle='Kill Bill: Vol. 2' movieYear='2004' movieDescription='The Bride unwaveringly continues on her roaring rampage of revenge against the band of assassins who had tried to kill her and her unborn child. She visits each of her former associates one-by-one...' %}
-                </div>
-            </section>
-        </div>
+        <img class="header-image" src="{% static "images/header.gif" %}">
     </div>
     <div class="content bg-white">
         <div class="content-container">
