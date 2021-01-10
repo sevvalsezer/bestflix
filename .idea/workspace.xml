@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f1cd324-11c0-4ca3-ad94-b659f0e9cb7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="5979e3c3-226e-4e1d-b51e-8dc3fb3f4362" />
+  <component name="ProjectId" id="1mqqd74ws537vM4ZGE2jVzFOYxq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Beyzza\Desktop\DjangoProjects\BESTFLIX\Assets\images" />
+      <recent name="C:\Users\Beyzza\Desktop\DjangoProjects\BESTFLIX\Assets" />
+      <recent name="C:\Users\Beyzza\Desktop\DjangoProjects\BESTFLIX\Statics" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BESTFLIX" type="Python.DjangoServer" factoryName="Django server">
+      <module name="BESTFLIX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="BESTFLIX.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Beyzza\anaconda3\envs\MyDjangoEnv\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="1010" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f1cd324-11c0-4ca3-ad94-b659f0e9cb7a" name="Default Changelist" comment="" />
+      <created>1610231553979</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610231553979</updated>
+      <workItem from="1610231555295" duration="486000" />
+      <workItem from="1610232713690" duration="13534000" />
+      <workItem from="1610288480017" duration="972000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="369" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610233699928">
+      <screen x="0" y="0" width="1829" height="989" />
+    </state>
+    <state x="369" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1829.989@0.0.1829.989" timestamp="1610233699928" />
+    <state width="1785" height="185" key="GridCell.Tab.0.bottom" timestamp="1610288310292">
+      <screen x="0" y="0" width="1829" height="989" />
+    </state>
+    <state width="1785" height="185" key="GridCell.Tab.0.bottom/0.0.1829.989/3200.0.1024.728@0.0.1829.989" timestamp="1610288310292" />
+    <state width="1785" height="487" key="GridCell.Tab.0.bottom/0.0.1829.989@0.0.1829.989" timestamp="1610242083351" />
+    <state width="1785" height="185" key="GridCell.Tab.0.center" timestamp="1610288310291">
+      <screen x="0" y="0" width="1829" height="989" />
+    </state>
+    <state width="1785" height="185" key="GridCell.Tab.0.center/0.0.1829.989/3200.0.1024.728@0.0.1829.989" timestamp="1610288310291" />
+    <state width="1785" height="487" key="GridCell.Tab.0.center/0.0.1829.989@0.0.1829.989" timestamp="1610242083351" />
+    <state width="1785" height="185" key="GridCell.Tab.0.left" timestamp="1610288310291">
+      <screen x="0" y="0" width="1829" height="989" />
+    </state>
+    <state width="1785" height="185" key="GridCell.Tab.0.left/0.0.1829.989/3200.0.1024.728@0.0.1829.989" timestamp="1610288310291" />
+    <state width="1785" height="487" key="GridCell.Tab.0.left/0.0.1829.989@0.0.1829.989" timestamp="1610242083350" />
+    <state width="1785" height="185" key="GridCell.Tab.0.right" timestamp="1610288310292">
+      <screen x="0" y="0" width="1829" height="989" />
+    </state>
+    <state width="1785" height="185" key="GridCell.Tab.0.right/0.0.1829.989/3200.0.1024.728@0.0.1829.989" timestamp="1610288310292" />
+    <state width="1785" height="487" key="GridCell.Tab.0.right/0.0.1829.989@0.0.1829.989" timestamp="1610242083351" />
+    <state x="1006" y="213" width="672" height="678" key="search.everywhere.popup" timestamp="1610234462541">
+      <screen x="0" y="0" width="1829" height="989" />
+    </state>
+    <state x="1006" y="213" width="672" height="678" key="search.everywhere.popup/0.0.1829.989@0.0.1829.989" timestamp="1610234462541" />
+  </component>
+</project>
