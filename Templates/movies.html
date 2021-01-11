@@ -2,4 +2,279 @@
 {% load static from static %}
 
 {% block content %}
+
+    <div class="content bg-white">
+        <section class="">
+            <div class="row  px-5 py-5">
+                <div class="col-md-12">
+                    <h2 class="text-center">TREND MOVIES</h2>
+                    <ul class="nav nav-pills genre-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab"
+                               aria-controls="All" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Horror-tab" data-toggle="tab" href="#Horror" role="tab"
+                               aria-controls="Horror" aria-selected="false">Horror</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Action-tab" data-toggle="tab" href="#Action" role="tab"
+                               aria-controls="Action" aria-selected="false">Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="SciFic-tab" data-toggle="tab" href="#SciFic" role="tab"
+                               aria-controls="SciFic" aria-selected="false">Science Fiction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Comedy-tab" data-toggle="tab" href="#Comedy" role="tab"
+                               aria-controls="Comedy" aria-selected="false">Comedy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div class="content-container">
+
+                <!--all movies-->
+                <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+                    <div class="row">
+                        <div class="movie-card-small"
+                             style="background-image: url('https://image.tmdb.org/t/p/w300/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg');">
+                            <div class="row movie-card-small-header">
+                                <div class="col"></div>
+                            </div>
+                            <div class="row movie-card-small-footer">
+                                <div class="col">
+                                    <div class="movie-card-small-info">
+                                        <div class="movie-card-small-title">
+                                            News of the World
+                                        </div>
+                                        <div class="movie-card-year">
+                                            2020
+                                        </div>
+                                        <div class="movie-card-rating">
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="movie-card-small-description">
+                                            A Texan traveling across the wild West bringing the news of the world to
+                                            local
+                                            townspeople, agrees to help rescue a young girl who was kidnapped.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card-small"
+                             style="background-image: url('https://image.tmdb.org/t/p/w300/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg');">
+                            <div class="row movie-card-small-header">
+                                <div class="col"></div>
+                            </div>
+                            <div class="row movie-card-small-footer">
+                                <div class="col">
+                                    <div class="movie-card-small-info">
+                                        <div class="movie-card-small-title">
+                                            News of the World
+                                        </div>
+                                        <div class="movie-card-year">
+                                            2020
+                                        </div>
+                                        <div class="movie-card-rating">
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="movie-card-small-description">
+                                            A Texan traveling across the wild West bringing the news of the world to
+                                            local
+                                            townspeople, agrees to help rescue a young girl who was kidnapped.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card-small"
+                             style="background-image: url('https://image.tmdb.org/t/p/w300/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg');">
+                            <div class="row movie-card-small-header">
+                                <div class="col"></div>
+                            </div>
+                            <div class="row movie-card-small-footer">
+                                <div class="col">
+                                    <div class="movie-card-small-info">
+                                        <div class="movie-card-small-title">
+                                            News of the World
+                                        </div>
+                                        <div class="movie-card-year">
+                                            2020
+                                        </div>
+                                        <div class="movie-card-rating">
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="movie-card-small-description">
+                                            A Texan traveling across the wild West bringing the news of the world to
+                                            local
+                                            townspeople, agrees to help rescue a young girl who was kidnapped.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card-small"
+                             style="background-image: url('https://image.tmdb.org/t/p/w300/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg');">
+                            <div class="row movie-card-small-header">
+                                <div class="col"></div>
+                            </div>
+                            <div class="row movie-card-small-footer">
+                                <div class="col">
+                                    <div class="movie-card-small-info">
+                                        <div class="movie-card-small-title">
+                                            News of the World
+                                        </div>
+                                        <div class="movie-card-year">
+                                            2020
+                                        </div>
+                                        <div class="movie-card-rating">
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="movie-card-small-description">
+                                            A Texan traveling across the wild West bringing the news of the world to
+                                            local
+                                            townspeople, agrees to help rescue a young girl who was kidnapped.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="movie-card-small"
+                             style="background-image: url('https://image.tmdb.org/t/p/w300/fYQCgVRsQTEfUrP7cW5iAFVYOlh.jpg');">
+                            <div class="row movie-card-small-header">
+                                <div class="col"></div>
+                            </div>
+                            <div class="row movie-card-small-footer">
+                                <div class="col">
+                                    <div class="movie-card-small-info">
+                                        <div class="movie-card-small-title">
+                                            News of the World
+                                        </div>
+                                        <div class="movie-card-year">
+                                            2020
+                                        </div>
+                                        <div class="movie-card-rating">
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                            <svg class="movie-star-icon" focusable="false" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
+                                                <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="movie-card-small-description">
+                                            A Texan traveling across the wild West bringing the news of the world to
+                                            local
+                                            townspeople, agrees to help rescue a young girl who was kidnapped.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--A button that links to "movies" page-->
+            <form action="./movies.html">
+                <input type="submit" value="Find More"/>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+
 {% endblock %}
