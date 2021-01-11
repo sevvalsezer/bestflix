@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^movies/$', views.movies, name='movies'),
     url(r'^series/$', views.seriesPage, name='series'),
     url(r'^detail/$', views.detail, name='detail'),
+    url(r'^blog/$', views.blog, name='blog')
 ]

@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1cd324-11c0-4ca3-ad94-b659f0e9cb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/images/firstlook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/images/rotten.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/images/rotten.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/images/trailer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Templates/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Templates/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BESTFLIX/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/BESTFLIX/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BestApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/BestApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/series.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/series.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
