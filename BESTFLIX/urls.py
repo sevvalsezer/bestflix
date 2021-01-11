@@ -20,5 +20,6 @@ from BestApp import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.homePage, name='home-page'),
-    url(r'^movies/$', views.movies, name='movies')
+    url(r'^movies/$', views.movies, name='movies'),
+    url(r'^series/$', views.seriesPage, name='series')
 ]

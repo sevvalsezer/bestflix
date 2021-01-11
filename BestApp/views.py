@@ -6,3 +6,6 @@ def homePage(request):
 
 def movies(request):
     return render(request, 'movies.html')
+
+def seriesPage(request):
+    return render(request, 'series.html')
