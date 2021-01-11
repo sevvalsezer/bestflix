@@ -9,3 +9,6 @@ def movies(request):
 
 def seriesPage(request):
     return render(request, 'series.html')
+
+def detail(request):
+    return render(request, 'detail.html')

@@ -71,3 +71,23 @@
     font-size:1.3em;
 
 }
+
+.view-details {
+    color: white;
+}
+
+.comment-wrapper .panel-body {
+    max-height:650px;
+    overflow:auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    margin-bottom:25px;
+    margin-right:5px;
+}
