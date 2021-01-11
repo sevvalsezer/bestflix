@@ -249,7 +249,7 @@
 	</style>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$(".popular-movie-slider").slick({
+			$(".recent-movie-slider").slick({
 				autoplay: true,
 				dots: true,
 				infinite: true,
@@ -258,7 +258,15 @@
 				slidesToScroll: 2,
 				variableWidth: true
 			});
-			$(".recent-movie-slider").slick({
+			$(".popular-movie-slider").slick({
+				autoplay: false,
+				dots: true,
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 2,
+				variableWidth: true
+			});
+			$(".most-popular-tv-shows-slider").slick({
 				autoplay: false,
 				dots: true,
 				infinite: true,
