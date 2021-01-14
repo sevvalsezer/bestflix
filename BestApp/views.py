@@ -13,6 +13,5 @@ def seriesPage(request):
 def detail(request):
     return render(request, 'detail.html')
 
-
 def blog(request):
     return render(request, 'blog.html')
