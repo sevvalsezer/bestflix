@@ -4,11 +4,11 @@
     <div class="content">
         <div class="content-container">
             <section class="recent-movie-slider slider">
-                  {% for recent in recentList %}
+                {% for recent in recentList %}
                     <div>
                         {% include 'components/movie-card.html' with moviePoster=recent.media.poster movieTitle=recent.media.title movieYear=recent.media.year.year movieDescription=recent.media.description %}
                     </div>
-                    {% endfor %}
+                {% endfor %}
             </section>
         </div>
     </div>
@@ -26,9 +26,9 @@
                         <div class="section-body">
                             <section class="popular-movie-slider slider">
                                 {% for popular in mostPopularMovieList %}
-                                <div>
-                                    {% include 'components/movie-card-small.html' with moviePoster=popular.media.poster movieTitle=popular.media.title movieYear=popular.media.year.year movieDescription=popular.media.description %}
-                                </div>
+                                    <div>
+                                        {% include 'components/movie-card-small.html' with moviePoster=popular.media.poster movieTitle=popular.media.title movieYear=popular.media.year.year movieDescription=popular.media.description %}
+                                    </div>
                                 {% endfor %}
                             </section>
                         </div>
@@ -42,10 +42,10 @@
                         </div>
                         <div class="section-body">
                             <section class="most-popular-tv-shows-slider slider">
-                                  {% for popular in mostPopularTvShowList %}
-                                <div>
-                                    {% include 'components/movie-card-small.html' with moviePoster=popular.media.poster movieTitle=popular.media.title movieYear=popular.media.year.year movieDescription=popular.media.description %}
-                                </div>
+                                {% for popular in mostPopularTvShowList %}
+                                    <div>
+                                        {% include 'components/movie-card-small.html' with moviePoster=popular.media.poster movieTitle=popular.media.title movieYear=popular.media.year.year movieDescription=popular.media.description %}
+                                    </div>
                                 {% endfor %}
                             </section>
                         </div>

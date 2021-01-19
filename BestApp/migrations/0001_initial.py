@@ -7,7 +7,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -23,7 +22,9 @@ class Migration(migrations.Migration):
                 ('rating', models.IntegerField()),
                 ('poster', models.URLField(unique=True)),
                 ('description', models.CharField(max_length=800)),
-                ('mediaType', models.CharField(choices=[(BestApp.models.MediaType('Movie'), 'Movie'), (BestApp.models.MediaType('Tv Show'), 'Tv Show')], max_length=255)),
+                ('mediaType', models.CharField(choices=[(BestApp.models.MediaType('Movie'), 'Movie'),
+                                                        (BestApp.models.MediaType('Tv Show'), 'Tv Show')],
+                                               max_length=255)),
             ],
         ),
     ]
