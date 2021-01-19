@@ -29,549 +29,176 @@
                     </li>
                 </ul>
 
+                <div class="tab-pane fade show active" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
+                    <!-- !!!!!! SERIES CARD STARTS HERE !!!!!!! -->
+                </div>
+
                 <div class="tab-content" id="myTabContent">
+
                     <!--For All movies-->
                     <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
-                        <!-- !!!!!! SERIES CARD STARTS HERE !!!!!!! -->
-                        <!-- HORROR -->
-                        <div class="tab-pane fade show active" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
-                            <!-- !!!!!! SERIES CARD STARTS HERE !!!!!!! -->
-                            <div class="container">
-                                <div class="row movie-cards" style="padding-top: 1rem;">
+                        <div class="forBigger container-fluid">
+                            <div class="row">
+                                {% for populer in mostPopulerMovieList %}
+                                    <!-- START ONE FILM -->
                                     <div class="col-md-3 d-flex">
                                         <div class="card shadow-sm">
                                             <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
+                                                 src={{ moviePoster }}
+                                                         alt={{ movieTitle }}>
                                             <div class="card-body">
-                                                <h5 class="card-title">MAMAMA</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
+                                                <h5 class="card-title">{{ movieTitle }}</h5>
+                                                <p class="card-text"> {{ movieDescription }} </p>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="btn-group btn-group-sm" role="group"
                                                          aria-label="Basic example">
                                                         <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
+                                                                class="bt-font">Details</span></button>
+                                                        <button type="button" class="btn btn-secondary "><i
+                                                                class="fa fa-heart-o"></i></button>
                                                     </div>
-                                                    <small class="text-muted">1h 42min</small>
+                                                    <small class="text-muted">{{ year }}</small>
+                                                    <small class="text-muted">{{ rating }}</small>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                </div>  <!-- END ROW !!!! -->
-                            </div>
-                        </div>
-                        <!-- ACTION -->
-                        <div class="tab-pane fade show active" id="Action" role="tabpanel" aria-labelledby="Action-tab">
-                            <div class="container">
-                                <div class="row movie-cards" style="padding-top: 1rem;">
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                </div>
+                                    </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="photoSec">
-                <h2 class="text-center">RECENT SERIES</h2>
-                <ul class="nav nav-pills" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab"
-                           aria-controls="All" aria-selected="true">All</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="Horror-tab" data-toggle="tab" href="#Horror" role="tab"
-                           aria-controls="Horror" aria-selected="false">Horror</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="Action-tab" data-toggle="tab" href="#Action" role="tab"
-                           aria-controls="Action" aria-selected="false">Action</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="SciFic-tab" data-toggle="tab" href="#SciFic" role="tab"
-                           aria-controls="SciFic" aria-selected="false">Science Fiction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="Comedy-tab" data-toggle="tab" href="#Comedy" role="tab"
-                           aria-controls="Comedy" aria-selected="false">Comedy</a>
-                    </li>
-                </ul>
 
-                <div class="tab-content" id="myTabContent">
-                    <!--For All movies-->
-                    <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
-                        <!-- !!!!!! SERIES CARD STARTS HERE !!!!!!! -->
-                        <!-- HORROR -->
-                        <div class="tab-pane fade show active" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
-                            <!-- !!!!!! SERIES CARD STARTS HERE !!!!!!! -->
-                            <div class="container">
-                                <div class="row movie-cards" style="padding-top: 1rem;">
+                    <!--For Horror movies-->
+                    <div class="tab-pane fade" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
+                        <div class="forBigger container-fluid">
+                            <div class="row">
+                                {% for populer in mostPopulerMovieList %}
+                                    <!-- START ONE FILM -->
                                     <div class="col-md-3 d-flex">
                                         <div class="card shadow-sm">
                                             <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
+                                                 src={{ moviePoster }}
+                                                         alt={{ movieTitle }}>
                                             <div class="card-body">
-                                                <h5 class="card-title">MAMAMA</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
+                                                <h5 class="card-title">{{ movieTitle }}</h5>
+                                                <p class="card-text"> {{ movieDescription }} </p>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="btn-group btn-group-sm" role="group"
                                                          aria-label="Basic example">
                                                         <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
+                                                                class="bt-font">Details</span></button>
+                                                        <button type="button" class="btn btn-secondary "><i
+                                                                class="fa fa-heart-o"></i></button>
                                                     </div>
-                                                    <small class="text-muted">1h 42min</small>
+                                                    <small class="text-muted">{{ year }}</small>
+                                                    <small class="text-muted">{{ rating }}</small>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                </div>  <!-- END ROW !!!! -->
+                                    </div>
+                                {% endfor %}
+                                <!-- FINISH  col-md- 3 -->
                             </div>
                         </div>
-                        <!-- ACTION -->
-                        <div class="tab-pane fade show active" id="Action" role="tabpanel" aria-labelledby="Action-tab">
-                            <div class="container">
-                                <div class="row movie-cards" style="padding-top: 1rem;">
+                    </div>
+
+                    <!--For Action movies-->
+                    <div class="tab-pane fade" id="Action" role="tabpanel" aria-labelledby="Action-tab">
+                        <div class="forBigger container-fluid">
+                            <div class="row">
+                                {% for populer in mostPopulerMovieList %}
+                                    <!-- START ONE FILM -->
                                     <div class="col-md-3 d-flex">
                                         <div class="card shadow-sm">
                                             <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
+                                                 src={{ moviePoster }}
+                                                         alt={{ movieTitle }}>
                                             <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
+                                                <h5 class="card-title">{{ movieTitle }}</h5>
+                                                <p class="card-text"> {{ movieDescription }} </p>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div class="btn-group btn-group-sm" role="group"
                                                          aria-label="Basic example">
                                                         <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
+                                                                class="bt-font">Details</span></button>
+                                                        <button type="button" class="btn btn-secondary "><i
+                                                                class="fa fa-heart-o"></i></button>
                                                     </div>
-                                                    <small class="text-muted">1h 42min</small>
+                                                    <small class="text-muted">{{ year }}</small>
+                                                    <small class="text-muted">{{ rating }}</small>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
+                                    </div>
+                                {% endfor %}
+                            </div>
+
+                            <!--for science fiction-->
+                            <div class="tab-pane fade" id="SciFic" role="tabpanel" aria-labelledby="SciFic-tab">
+                                <!--For Bigger screens-->
+                                <div class="forBigger container-fluid">
+                                    <div class="row">
+                                        {% for populer in mostPopulerMovieList %}
+                                            <!-- START ONE FILM -->
+                                            <div class="col-md-3 d-flex">
+                                                <div class="card shadow-sm">
+                                                    <img class="bd-placeholder-img imheight card-img"
+                                                         src={{ moviePoster }}
+                                                                 alt={{ movieTitle }}>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">{{ movieTitle }}</h5>
+                                                        <p class="card-text"> {{ movieDescription }} </p>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div class="btn-group btn-group-sm" role="group"
+                                                                 aria-label="Basic example">
+                                                                <button type="button" class="btn btn-secondary bt-font"><span
+                                                                        class="bt-font">Details</span></button>
+                                                                <button type="button" class="btn btn-secondary "><i
+                                                                        class="fa fa-heart-o"></i></button>
+                                                            </div>
+                                                            <small class="text-muted">{{ year }}</small>
+                                                            <small class="text-muted">{{ rating }}</small>
+                                                        </div>
                                                     </div>
-                                                    <small class="text-muted">1h 42min</small>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
+                                        {% endfor %}
+                                    </div>
+
+                                    <!--for comedy-->
+                                    <div class="tab-pane fade" id="Comedy" role="tabpanel" aria-labelledby="Comedy-tab">
+                                        <div class="forBigger container-fluid">
+                                            <div class="row">
+                                                {% for populer in mostPopulerMovieList %}
+                                                    <!-- START ONE FILM -->
+                                                    <div class="col-md-3 d-flex">
+                                                        <div class="card shadow-sm">
+                                                            <img class="bd-placeholder-img imheight card-img"
+                                                                 src={{ moviePoster }}
+                                                                         alt={{ movieTitle }}>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">{{ movieTitle }}</h5>
+                                                                <p class="card-text"> {{ movieDescription }} </p>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="btn-group btn-group-sm" role="group"
+                                                                         aria-label="Basic example">
+                                                                        <button type="button"
+                                                                                class="btn btn-secondary bt-font"><span
+                                                                                class="bt-font">Details</span></button>
+                                                                        <button type="button"
+                                                                                class="btn btn-secondary "><i
+                                                                                class="fa fa-heart-o"></i></button>
+                                                                    </div>
+                                                                    <small class="text-muted">{{ year }}</small>
+                                                                    <small class="text-muted">{{ rating }}</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
+                                                {% endfor %}
                                             </div>
                                         </div>
-                                    </div>  <!-- finish   col-md- 3 -->
-                                    <div class="col-md-3 d-flex">
-                                        <div class="card shadow-sm">
-                                            <img class="bd-placeholder-img imheight card-img"
-                                                 src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg"
-                                                 alt="Dirty Grandpa">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Dirty Grandpa</h5>
-                                                <p class="card-text"> Right before his wedding, an uptight guy is
-                                                    tricked
-                                                    into
-                                                    driving his
-                                                    grandfather, a lecherous former Army Lieutenant Colonel, to Florida
-                                                    for
-                                                    Spring
-                                                    Break. </p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group btn-group-sm" role="group"
-                                                         aria-label="Basic example">
-                                                        <button type="button" class="btn btn-secondary bt-font"><span
-                                                                class="bt-font">Details</span>
-                                                        </button>
-                                                        <button type="button" class="btn btn-secondary"><i
-                                                                class="fa fa-heart-o"></i>
-                                                        </button>
-                                                    </div>
-                                                    <small class="text-muted">1h 42min</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>  <!-- finish   col-md- 3 -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
