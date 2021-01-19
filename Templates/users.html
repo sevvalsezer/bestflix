@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static from static %}
+
+{% block content %}
+<div class="content bg-white py-6">
+    <div class="container py-6 px-6">
+        <h1>sign up here!</h1>
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class='btn btn-primary' value="Submit">
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -61,10 +61,11 @@
                         </div>
                         <div class="section-body">
                             <div class="row mb-4">
-                                {% include 'components/celebrity-card.html' with celebrityName='Keanu Reeves' movieName='Matrix' celebrityPhoto='http://img.timeinc.net/time/photoessays/2010/halloween_costumes/sad_keanu.jpg' %}{% include 'components/celebrity-card.html' with celebrityName='Keanu Reeves' movieName='Matrix' celebrityPhoto='http://img.timeinc.net/time/photoessays/2010/halloween_costumes/sad_keanu.jpg' %}
-                                {% include 'components/celebrity-card.html' with celebrityName='Keanu Reeves' movieName='Matrix' celebrityPhoto='http://img.timeinc.net/time/photoessays/2010/halloween_costumes/sad_keanu.jpg' %}
-                                {% include 'components/celebrity-card.html' with celebrityName='Keanu Reeves' movieName='Matrix' celebrityPhoto='http://img.timeinc.net/time/photoessays/2010/halloween_costumes/sad_keanu.jpg' %}
-                                {% include 'components/celebrity-card.html' with celebrityName='Keanu Reeves' movieName='Matrix' celebrityPhoto='http://img.timeinc.net/time/photoessays/2010/halloween_costumes/sad_keanu.jpg' %}
+                                 {% for actor in castList %}
+                                <div>
+                                    {% include 'components/celebrity-card.html' with celebrityName=actor.name movieName=actor.knownFor celebrityPhoto=actor.photo %}
+                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
