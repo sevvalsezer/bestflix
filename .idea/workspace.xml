@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1cd324-11c0-4ca3-ad94-b659f0e9cb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Templates/components/blog-card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BESTFLIX/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BESTFLIX/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BestApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/BestApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/components/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/components/details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -51,6 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\django\bestflix\Assets" />
       <recent name="D:\dev\django\bestflix\Assets\images" />
       <recent name="C:\Users\Beyzza\Desktop\DjangoProjects\BESTFLIX\Assets\images" />
       <recent name="C:\Users\Beyzza\Desktop\DjangoProjects\BESTFLIX\Assets" />
@@ -104,7 +109,9 @@
       <workItem from="1610232713690" duration="13534000" />
       <workItem from="1610288480017" duration="972000" />
       <workItem from="1610292478608" duration="31121000" />
-      <workItem from="1610978564971" duration="176000" />
+      <workItem from="1610978564971" duration="2334000" />
+      <workItem from="1610998083940" duration="2260000" />
+      <workItem from="1611065923924" duration="9008000" />
     </task>
     <servers />
   </component>

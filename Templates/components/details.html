@@ -30,32 +30,16 @@
                 <p>{{ summaryOfMovie }}</p>
 
                 <h5> Synopsis </h5>
-                <p>After Graham O'Brien wins Team TARDIS a free holiday at the high-end alien resort Tranquility Spa, it
-                    becomes clear that not everything is as it seems — why is the staff so worried about oxygen levels
-                    in the Spa when the planet appears to be hospitable to humans? What are the monsters stalking the
-                    corridors? And why does the planet on which they're all standing bear the ominous name of "Orphan
-                    55"?</p>
+                <p>{{ Synopsis }}</p>
 
                 <h5>Cast</h5>
                 <ul class="ml-4">
-                    <li>The Doctor - Jodie Whittaker</li>
-                    <li>Graham O'Brien - Bradley Walsh</li>
-                    <li>Yasmin Khan - Mandip Gill</li>
-                    <li>Ryan Sinclair - Tosin Cole</li>
-                    <li>Kane - Laura Fraser</li>
-                    <li>Bella - Gia Ré</li>
-                    <li>Nevi - James Buckley</li>
-                    <li>Vilma - Julia Foster</li>
-                    <li>Hyph3n - Amy Booth-Steel</li>
-                    <li>Vorm - Will Austin</li>
-                    <li>Benni - Col Farrell</li>
-                    <li>Sylas - Lewin Lloyd</li>
-                    <li>Lead Dreg & Creature Movement - Spencer Wilding</li>
+                    {{ castList }}
                 </ul>
             </div>
             <div class="col-md-6">
                 <!-- Trailer -->
-                <a href="https://www.youtube.com/watch?v=XogxiHyp8rA" data-toggle="modal"
+                <a href="{{ youtubeLink }}" data-toggle="modal"
                    data-target=".bd-example-modal-lg">
                     <img src="{% static "images/trailer.png" %}" class="img-fluid rounded img-thumbnail">
                 </a>
@@ -73,7 +57,7 @@
                 </div>
 
                 <!-- First Look -->
-                <a href="https://www.youtube.com/watch?v=HerTBRIMhHQ" data-toggle="modal"
+                <a href="{{ secondVideo }}" data-toggle="modal"
                    data-target=".bd-example-modal-lg">
                     <img src="{% static "images/firstlook.png" %}" class="img-fluid rounded img-thumbnail">
                 </a>
