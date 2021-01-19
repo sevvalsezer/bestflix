@@ -2,397 +2,429 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bestflix</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<style type="text/css">
-		.header {
-			padding-top: 40px;
-			padding-bottom: 40px;
-		}
-		.main-background {
-			background: url({% static "images/background.jpg" %});
-			background-size: cover;
-			height: 100vh;
-		}
-		.main-container {
-			position: fixed;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			overflow-y: auto;
-		}
-		.content {
-			padding-left: 15px;
-			padding-right: 15px;
-			margin-left: -15px;
-			margin-right: -15px;
-		}
-		.content-container {
-			width: 80%;
-			margin: 0 auto;
-		}
-		.footer {
-			height: 300px;
-			color: white;
-		}
-		.footer-content {
-			padding-left: 15px;
-			padding-right: 15px;
-			margin-left: -15px;
-			margin-right: -15px;
-		}
+    <title>Bestflix</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <style type="text/css">
+        .header {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .main-background {
+            background: url({% static "images/background.jpg" %});
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .main-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .content {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .content-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .footer {
+            height: 300px;
+            color: white;
+        }
+
+        .footer-content {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
 
 
-		.slider {
-		}
+        .slider {
+        }
 
-		.slick-slide {
-			margin: 0px 20px;
-		}
+        .slick-slide {
+            margin: 0px 20px;
+        }
 
-		.slick-slide img {
-			width: 100%;
-		}
+        .slick-slide img {
+            width: 100%;
+        }
 
-		.slick-prev:before,
-		.slick-next:before {
-			color: black;
-		}
-		.slick-next {
-			visibility: hidden;
-			opacity: 0;
-			right: 0px;
-			background-image: unset;
-			transition: all ease-in-out 0.2s;
-		}
-		.slick-prev {
-			visibility: hidden;
-			opacity: 0;
-			left: 0px;
-			z-index: 1;
-			background-image: unset;
-			transition: all ease-in-out 0.2s;
-		}
-		.slick-arrow {
-			width: 60px;
-			height: 100%;
-		}
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
 
-		.slick-slider:hover .slick-next {
-			visibility: visible;
-			opacity: 1;
-			background-image: linear-gradient(-90deg, #00000099, #00000005);
-			transition: all ease-in-out 0.2s;
-		}
-		.slick-slider:hover .slick-prev {
-			visibility: visible;
-			opacity: 1;
-			background-image: linear-gradient(90deg, #00000099, #00000005);
-			transition: all ease-in-out 0.2s;
-		}
+        .slick-next {
+            visibility: hidden;
+            opacity: 0;
+            right: 0px;
+            background-image: unset;
+            transition: all ease-in-out 0.2s;
+        }
 
-		.slick-center div {
-			opacity: 1 !important;
-			transition: all ease-in-out .3s;
-		}
+        .slick-prev {
+            visibility: hidden;
+            opacity: 0;
+            left: 0px;
+            z-index: 1;
+            background-image: unset;
+            transition: all ease-in-out 0.2s;
+        }
 
-		.movie-card {
-			opacity: 0.5;
-			height: 450px;
-			width: 300px;
-			background-color: white;
-			background-size: cover;
-		}
-		.movie-card-info {
-			background-image: linear-gradient(45deg, #000000, rgb(0 0 0 / 0%));
-			height: 100%;
-			padding: 10px 20px;
-		}
-		.movie-card-title {
-			font-weight: 300;
-			font-size: 1.375rem;
-			color: #f8f9fa;
-		}
-		.movie-card-year {
-			font-weight: 300;
-			font-size: 0.875rem;
-			color: #f8f9fa;
-		}
-		.movie-card-description {
-			font-weight: 300;
-			font-size: 0.875rem;
-			color: #f8f9fa;
-			display: -webkit-box;
-			-webkit-line-clamp: 4;
-			-webkit-box-orient: vertical;
-			overflow: hidden;
-		}
-		.movie-card-rating {
-			color: #f5b50a;
-			font-size: 1em;
-			fill: #f5b50a;
-		}
-		.movie-star-icon {
-			display: inline-block;
-			flex-shrink: 0;
-			user-select: none;
-			width: 1rem;
-			height: 1rem;
-		}
+        .slick-arrow {
+            width: 60px;
+            height: 100%;
+        }
 
-		.movie-card-small {
-			height: 300px;
-			width: 200px;
-			background-color: white;
-			background-size: cover;
-			display: flex;
-			align-items: flex-end;
-		}
+        .slick-slider:hover .slick-next {
+            visibility: visible;
+            opacity: 1;
+            background-image: linear-gradient(-90deg, #00000099, #00000005);
+            transition: all ease-in-out 0.2s;
+        }
 
-		.movie-card:hover {
-			cursor: pointer;
-		}
+        .slick-slider:hover .slick-prev {
+            visibility: visible;
+            opacity: 1;
+            background-image: linear-gradient(90deg, #00000099, #00000005);
+            transition: all ease-in-out 0.2s;
+        }
 
+        .slick-center div {
+            opacity: 1 !important;
+            transition: all ease-in-out .3s;
+        }
 
-		.movie-card:hover .movie-card-title {
-			color: #f8f9fa;
-			text-decoration: underline;
-		}
+        .movie-card {
+            opacity: 0.5;
+            height: 450px;
+            width: 300px;
+            background-color: white;
+            background-size: cover;
+        }
 
+        .movie-card-info {
+            background-image: linear-gradient(45deg, #000000, rgb(0 0 0 / 0%));
+            height: 100%;
+            padding: 10px 20px;
+        }
 
+        .movie-card-title {
+            font-weight: 300;
+            font-size: 1.375rem;
+            color: #f8f9fa;
+        }
 
-		.movie-card-small:hover {
-			cursor: pointer;
-		}
+        .movie-card-year {
+            font-weight: 300;
+            font-size: 0.875rem;
+            color: #f8f9fa;
+        }
+
+        .movie-card-description {
+            font-weight: 300;
+            font-size: 0.875rem;
+            color: #f8f9fa;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .movie-card-rating {
+            color: #f5b50a;
+            font-size: 1em;
+            fill: #f5b50a;
+        }
+
+        .movie-star-icon {
+            display: inline-block;
+            flex-shrink: 0;
+            user-select: none;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .movie-card-small {
+            height: 300px;
+            width: 200px;
+            background-color: white;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .movie-card:hover {
+            cursor: pointer;
+        }
 
 
-		.movie-card-small:hover .movie-card-small-title {
-			color: #f8f9fa;
-			text-decoration: underline;
-		}
+        .movie-card:hover .movie-card-title {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
 
-		.movie-card-small-title {
-			font-weight: 300;
-			font-size: 1rem;
-			color: #f8f9fa;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-		.movie-card-small-footer {
-			width: 100%;
-			transition: all 0.2s ease-in-out
-		}
 
-		.movie-card-small-info {
-			background-image: linear-gradient(45deg, #000000, rgb(0 0 0 / 0%));
-			height: 100%;
-			width: 200px;
-			padding: 10px 20px;
-		}
-		.movie-card-small-description {
-			font-weight: 300;
-			font-size: 0.875rem;
-			color: #f8f9fa;
-			display: -webkit-box;
-			-webkit-line-clamp: 4;
-			-webkit-box-orient: vertical;
-			overflow: hidden;
-			height: 0px;
-			transition: all 0.3s ease-in-out
-		}
+        .movie-card-small:hover {
+            cursor: pointer;
+        }
 
-		.movie-card-small:hover .movie-card-small-description {
-			height: 87px;
-			transition: all 0.3s ease-in-out;
-		}
 
-		.section {
-			margin-top: 25px;
-		}
-		.section-title {
-			font-size: 2.375rem;
-		}
+        .movie-card-small:hover .movie-card-small-title {
+            color: #f8f9fa;
+            text-decoration: underline;
+        }
 
-		.section-subtitle{
-			font-size: 1.375rem;
-			color: rgba(0,0,0,.5);
-		}
+        .movie-card-small-title {
+            font-weight: 300;
+            font-size: 1rem;
+            color: #f8f9fa;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-		.section-body {
-			margin: 20px auto 40px auto;
-		}
+        .movie-card-small-footer {
+            width: 100%;
+            transition: all 0.2s ease-in-out
+        }
 
-		.popular-movie-slider {
-			margin: 40px auto 80px auto !important;
-		}
+        .movie-card-small-info {
+            background-image: linear-gradient(45deg, #000000, rgb(0 0 0 / 0%));
+            height: 100%;
+            width: 200px;
+            padding: 10px 20px;
+        }
 
-		.celebrity-title {
-			font-size: 1.5rem;
-			color: black;
-		}
+        .movie-card-small-description {
+            font-weight: 300;
+            font-size: 0.875rem;
+            color: #f8f9fa;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 0px;
+            transition: all 0.3s ease-in-out
+        }
 
-		.celebrity-title:hover {
-			text-decoration: none;
-		}
+        .movie-card-small:hover .movie-card-small-description {
+            height: 87px;
+            transition: all 0.3s ease-in-out;
+        }
 
-		.celebrity-subtitle {
-			font-size: 1.375rem;
-			color: rgba(0,0,0,.5);
-		}
-	</style>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$(".recent-movie-slider").slick({
-				autoplay: true,
-				dots: true,
-				infinite: true,
-				centerMode: true,
-				slidesToShow: 3,
-				slidesToScroll: 2,
-				variableWidth: true
-			});
-			$(".popular-movie-slider").slick({
-				autoplay: false,
-				dots: true,
-				infinite: true,
-				slidesToShow: 4,
-				slidesToScroll: 2,
-				variableWidth: true
-			});
-			$(".most-popular-tv-shows-slider").slick({
-				autoplay: false,
-				dots: true,
-				infinite: true,
-				slidesToShow: 4,
-				slidesToScroll: 2,
-				variableWidth: true
-			});
-		});
-	</script>
+        .section {
+            margin-top: 25px;
+        }
+
+        .section-title {
+            font-size: 2.375rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.375rem;
+            color: rgba(0, 0, 0, .5);
+        }
+
+        .section-body {
+            margin: 20px auto 40px auto;
+        }
+
+        .popular-movie-slider {
+            margin: 40px auto 80px auto !important;
+        }
+
+        .celebrity-title {
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .celebrity-title:hover {
+            text-decoration: none;
+        }
+
+        .celebrity-subtitle {
+            font-size: 1.375rem;
+            color: rgba(0, 0, 0, .5);
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".recent-movie-slider").slick({
+                autoplay: true,
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                variableWidth: true
+            });
+            $(".popular-movie-slider").slick({
+                autoplay: false,
+                dots: true,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                variableWidth: true
+            });
+            $(".most-popular-tv-shows-slider").slick({
+                autoplay: false,
+                dots: true,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                variableWidth: true
+            });
+        });
+    </script>
 </head>
 
 <body>
-	<div class="main-background"></div>
-	<div class="main-container container-fluid">
-		<div class="header content">
-			<nav class="navbar navbar-expand-lg navbar-dark content-container">
-				<a class="navbar-brand" href="#"><img width="132" src="{% static "images/logo.png" %}"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+<div class="main-background"></div>
+<div class="main-container container-fluid">
+    <div class="header content">
+        <nav class="navbar navbar-expand-lg navbar-dark content-container">
+            <a class="navbar-brand" href="#"><img width="132" src="{% static "images/logo.png" %}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Home</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarMoviesMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
-							<div class="dropdown-menu" aria-labelledby="navbarMoviesMenuLink">
-								<a class="dropdown-item" href="#">Most Recent</a>
-								<a class="dropdown-item" href="#">Most Popular</a>
-								<a class="dropdown-item" href="#">Best Rated</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarTvShowsMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TV Shows</a>
-							<div class="dropdown-menu" aria-labelledby="navbarTvShowsMenuLink">
-								<a class="dropdown-item" href="#">On Air</a>
-								<a class="dropdown-item" href="#">Most Popular</a>
-								<a class="dropdown-item" href="#">Best Rated</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Cast</a>
-						</li>
-					</ul>
-					<form class="form-inline">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-					</form>
-					<div class="ml-3">
-						<a href="/blog" class="btn btn-danger my-2 my-sm-0">Blog</a>
-						<a href="/blog" class="btn btn-danger my-2 my-sm-0">Log In</a>
-					</div>
-				</div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarMoviesMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Movies</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarMoviesMenuLink">
+                            <a class="dropdown-item" href="#">Most Recent</a>
+                            <a class="dropdown-item" href="#">Most Popular</a>
+                            <a class="dropdown-item" href="#">Best Rated</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarTvShowsMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">TV Shows</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarTvShowsMenuLink">
+                            <a class="dropdown-item" href="#">On Air</a>
+                            <a class="dropdown-item" href="#">Most Popular</a>
+                            <a class="dropdown-item" href="#">Best Rated</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cast</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="ml-3">
+                    <a href="/blog" class="btn btn-danger my-2 my-sm-0">Blog</a>
+                    <a href="/blog" class="btn btn-danger my-2 my-sm-0">Log In</a>
+                </div>
+            </div>
 
-			</nav>
-		</div>
-        {% block content %}
-        {% endblock %}
-        <div class="footer">
-			<div class="footer-content">
-				<div class="content-container">
-					<div class="row">
-						<div class="col col-md-3">
-							<div class="section">
-								<div class="section-title">
-									<a href="/"><img width="200" src="{% static "images/logo.png" %}"></a>
-								</div>
-								<div class="section-body">
-									©℗®™ All rights reserved, literally.
-								</div>
-							</div>
-						</div>
-						<div class="col col-md-6">
-							<div class="section">
-								<div class="section-body">
-									<div class="row">
-										<div class="col-2">
-											<a href="/" class="text-white">Home</a>
-										</div>
-										<div class="col">
-											<p class="text-white">Movies</p>
-											<ul class="pl-0">
-												<li><a href="/movies/most-recent" class="text-white">Most Recent</a></li>
-												<li><a href="/movies/most-popular" class="text-white">Most Popular</a></li>
-												<li><a href="/movies/best-rated" class="text-white">Best Rated</a></li>
-											</ul>
-										</div>
-										<div class="col">
-											<p class="text-white">TV Shows</p>
-											<ul class="pl-0">
-												<li><a href="/tv-shows/most-recent" class="text-white">Most Recent</a></li>
-												<li><a href="/tv-shows/most-popular" class="text-white">Most Popular</a></li>
-												<li><a href="/tv-shows/best-rated" class="text-white">Best Rated</a></li>
-											</ul>
-										</div>
-										<div class="col-2">
-											<a href="/cast" class="text-white">Cast</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col col-md-3">
-							<div class="section">
-								<div class="section-title">
-									Newsletter
-								</div>
-								<div class="section-subtitle text-white">
-									Sign-up for news from us!
-								</div>
-								<div class="section-body">
-									<div class="input-group mb-3">
-										<input type="text" class="form-control" style="max-width: 260px;" placeholder="E-Mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-										<div class="input-group-append">
-											<button type="button" class="btn btn-danger">Sign Up</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        </nav>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <div class="footer">
+        <div class="footer-content">
+            <div class="content-container">
+                <div class="row">
+                    <div class="col col-md-3">
+                        <div class="section">
+                            <div class="section-title">
+                                <a href="/"><img width="200" src="{% static "images/logo.png" %}"></a>
+                            </div>
+                            <div class="section-body">
+                                ©℗®™ All rights reserved, literally.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="section">
+                            <div class="section-body">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <a href="/" class="text-white">Home</a>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-white">Movies</p>
+                                        <ul class="pl-0">
+                                            <li><a href="/movies/most-recent" class="text-white">Most Recent</a></li>
+                                            <li><a href="/movies/most-popular" class="text-white">Most Popular</a></li>
+                                            <li><a href="/movies/best-rated" class="text-white">Best Rated</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p class="text-white">TV Shows</p>
+                                        <ul class="pl-0">
+                                            <li><a href="/tv-shows/most-recent" class="text-white">Most Recent</a></li>
+                                            <li><a href="/tv-shows/most-popular" class="text-white">Most Popular</a>
+                                            </li>
+                                            <li><a href="/tv-shows/best-rated" class="text-white">Best Rated</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="/cast" class="text-white">Cast</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-3">
+                        <div class="section">
+                            <div class="section-title">
+                                Newsletter
+                            </div>
+                            <div class="section-subtitle text-white">
+                                Sign-up for news from us!
+                            </div>
+                            <div class="section-body">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" style="max-width: 260px;"
+                                           placeholder="E-Mail" aria-label="Recipient's username"
+                                           aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-danger">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
