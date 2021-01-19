@@ -34,3 +34,18 @@ def users(request):
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'post_list.html', {'posts': posts})
+
+def movies(request):
+    return render(request, 'movies.html')
+
+def seriesPage(request):
+    return render(request, 'series.html')
+
+def detail(request):
+    return render(request, 'detail.html')
+
+def blog(request):
+    return render(request, 'blog.html')
+
+def about(request):
+    return render(request, 'about.html')

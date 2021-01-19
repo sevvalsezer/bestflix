@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static from static %}
+
+{% block content %}
+    <section>
+        <div class="container">
+            <div class="row  px-5 py-5">
+                <div class="col-md-12">
+                    <h2 class="text-center text-white">About Us</h2>
+                    <p class="text-center text-white">MIS233 Project Group</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content py-5 bg-white">
+
+        <div class="row">
+            <div class="col-md-3"> <!-- Sevval -->
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top teammember" src="{% static "teammembers/sevvo.jpeg" %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Şevval Sezer</h5>
+                        <p class="card-text"> Boğaziçi University, MIS </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <a target="_blank" href="https://github.com/sevvalsezer/">
+                                        <img class="github" src="{% static "teammembers/GitHub-Mark-64px.png" %}">
+                                    </a>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <img class="envelope" src="{% static "teammembers/envelope.png" %}">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Sevval -->
+
+            <div class="col-md-3"> <!-- Ezgi -->
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top teammember" src="{% static "teammembers/ezgi.jpeg" %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Ezgi Dönger</h5>
+                        <p class="card-text"> Boğaziçi University, MIS </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <a target="_blank" href="https://github.com/intsektuen">
+                                        <img class="github" src="{% static "teammembers/GitHub-Mark-64px.png" %}">
+                                    </a>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <img class="envelope" src="{% static "teammembers/envelope.png" %}">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Ezgi -->
+
+            <div class="col-md-3"> <!-- Melih -->
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top teammember" src="{% static "teammembers/melih.jpeg" %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Melih Doğan</h5>
+                        <p class="card-text"> Boğaziçi University, MIS </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <a target="_blank" href="https://github.com/mmelihdogan/">
+                                        <img class="github" src="{% static "teammembers/GitHub-Mark-64px.png" %}">
+                                    </a>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <img class="envelope" src="{% static "teammembers/envelope.png" %}">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Melih -->
+
+            <div class="col-md-3"> <!-- Zehra -->
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top teammember" src="{% static "teammembers/zehra.jpeg" %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Zehra Ergün</h5>
+                        <p class="card-text"> Boğaziçi University, MIS </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <a target="_blank" href="https://github.com/zehraergun/">
+                                        <img class="github" src="{% static "teammembers/GitHub-Mark-64px.png" %}">
+                                    </a>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">
+                                    <img class="envelope" src="{% static "teammembers/envelope.png" %}">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Zehra -->
+
+
+        </div>
+    </div>
+{% endblock %}
