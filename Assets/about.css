@@ -1,0 +1,15 @@
+.teammember {
+    max-height: 21rem;
+}
+
+.teammember:hover {
+    opacity: .5;
+}
+
+.github {
+    width: 20px;
+}
+
+.envelope {
+    width: 20px;
+}
