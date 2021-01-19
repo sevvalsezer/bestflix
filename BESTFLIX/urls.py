@@ -21,7 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.homePage, name='home-page'),
     url(r'^users/$', views.users, name="users"),
-    url(r'^blog/$', views.post_list, name='post_list'),
     url(r'^movies/$', views.movies, name='movies'),
     url(r'^series/$', views.seriesPage, name='series'),
     url(r'^detail/$', views.detail, name='detail'),

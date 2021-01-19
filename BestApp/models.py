@@ -12,7 +12,7 @@ class Media(models.Model):
     title = models.CharField(max_length=255, unique=False)
     year = models.DateField()
     rating = models.IntegerField()
-    poster = models.URLField(unique=True)
+    poster = models.URLField(unique=True, null=True)
     description = models.CharField(max_length=800, unique=False)
     mediaType = models.CharField(
         max_length=255,
@@ -45,7 +45,7 @@ class Recent(models.Model):
 
 class Cast(models.Model):
     name = models.CharField(max_length=255, unique=False)
-    photo = models.URLField(unique=True)
+    photo = models.URLField(unique=True, null=True)
     knownFor = models.CharField(max_length=255, unique=False)
 
     def __str__(self):
@@ -62,6 +62,7 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
+    image = models.URLField(unique=True, null=True)
     created_date = models.DateTimeField(
         default=timezone.now)
     published_date = models.DateTimeField(
@@ -73,6 +74,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
 
 class MovieDetail(models.Model):
     NOT_RATED = 0

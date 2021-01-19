@@ -6,6 +6,8 @@ from BestApp.models import User
 from BestApp.models import Cast
 from BestApp.models import Post
 
+
+
 # Register your models here.
 admin.site.register(Media)
 admin.site.register(MostPopular)

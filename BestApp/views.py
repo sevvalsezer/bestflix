@@ -13,7 +13,10 @@ def homePage(request):
     mostPopularMovieList = MostPopular.objects.all().filter(media__mediaType=MediaType.MOVIE.name)
     mostPopularTvShowList = MostPopular.objects.all().filter(media__mediaType=MediaType.TV_SHOW.name)
     castList = Cast.objects.all()
-    return render(request, 'home-page.html', context={'recentList': recentList, 'mostPopularMovieList': mostPopularMovieList, 'mostPopularTvShowList': mostPopularTvShowList, 'castList': castList})
+    return render(request, 'home-page.html', context={'recentList': recentList,
+                                                      'mostPopularMovieList': mostPopularMovieList,
+                                                      'mostPopularTvShowList': mostPopularTvShowList,
+                                                      'castList': castList})
 
 
 def users(request):
@@ -31,21 +34,24 @@ def users(request):
     return render(request, 'users.html', {'form': form})
 
 
-def post_list(request):
+def blog(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'post_list.html', {'posts': posts})
+
+    return render(request, 'blog.html', context={'posts': posts})
+
 
 def movies(request):
     return render(request, 'movies.html')
 
+
 def seriesPage(request):
-    return render(request, 'series.html')
+    mostPopularTvShowList = MostPopular.objects.all().filter(media__mediaType=MediaType.TV_SHOW.name)
+    return render(request, 'series.html', context={'mostPopularTvShowList': mostPopularTvShowList})
+
 
 def detail(request):
     return render(request, 'detail.html')
 
-def blog(request):
-    return render(request, 'blog.html')
 
 def about(request):
     return render(request, 'about.html')
