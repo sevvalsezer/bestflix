@@ -3,6 +3,7 @@ from BestApp.models import MostPopular
 from BestApp.models import MediaType
 from BestApp.models import Recent
 from BestApp.models import Cast
+from BestApp.forms import NewUserForm
 
 
 def homePage(request):
@@ -11,3 +12,18 @@ def homePage(request):
     mostPopularTvShowList = MostPopular.objects.all().filter(media__mediaType=MediaType.TV_SHOW.name)
     castList = Cast.objects.all()
     return render(request, 'home-page.html', context={'recentList': recentList, 'mostPopularMovieList': mostPopularMovieList, 'mostPopularTvShowList': mostPopularTvShowList, 'castList': castList})
+
+
+def users(request):
+    form = NewUserForm()
+
+    if request.method == "POST":
+        form = NewUserForm(request.POST)
+
+        if form.is_valid():
+            form.save(commit=True)
+            return homePage(request)
+        else:
+            print('ERROR FORM IS INVALID!')
+
+    return render(request, 'users.html', {'form': form})

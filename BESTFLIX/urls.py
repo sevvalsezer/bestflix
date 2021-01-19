@@ -19,5 +19,6 @@ from BestApp import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.homePage, name='home-page')
+    url(r'^$', views.homePage, name='home-page'),
+    url(r'^users/$', views.users, name="users"),
 ]
