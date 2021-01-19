@@ -42,6 +42,14 @@ class Recent(models.Model):
         return self.media.title + " " + self.media.year.year.__str__()
 
 
+class Cast(models.Model):
+    name = models.CharField(max_length=255, unique=False)
+    photo = models.URLField(unique=True)
+    knownFor = models.CharField(max_length=255, unique=False)
+
+    def __str__(self):
+        return self.name
+
 
 class User(models.Model):
     first_name = models.CharField(max_length=30)
